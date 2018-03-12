@@ -59,6 +59,11 @@ Your list of findings here...
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 
+2. === is true only if the operands are of the same type and value. == converts them to the same type and then makes the comparison of values.
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators
+
+
 
 ```
 
