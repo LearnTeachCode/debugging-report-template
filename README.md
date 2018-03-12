@@ -82,8 +82,9 @@ If applicable to your hypothesis, write a **list of steps** for how you changed 
 
 ```
 Your list of steps to run your experiment...
-1.a. Change to single-quoted string to see if a is recognized as the correct answer.
+1. Change to single-quoted string to see if a is recognized as the correct answer.
 
+2. If "a" in the assignment is not the same as a in the form, then == should take care of the possibly different types and then compare the values, which are the same.
 ```
 
 <br/>
@@ -99,6 +100,8 @@ What was the result of your experiment? Did it solve the bug or not? Did it crea
 ```
 Your results here...
 1. Changing to single-quotes did not make a difference. The correct answer is still not trigger the correct message.
+
+2. Using == does not make a difference. It's still displaying the wrong message.
 
 ```
 
@@ -116,6 +119,7 @@ Did this experiment *confirm* your hypothesis? Or would you say this result is i
 Your conclusion here...
 1. Hypothesis is wrong since as the documentation explains, single-quoted and double-quoted strings work the same way.
 
+2. Hypothesis not confirmed. == did not make a difference.
 ```
 
 <br/>
