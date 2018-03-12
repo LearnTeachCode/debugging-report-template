@@ -19,7 +19,7 @@ Even if you feel like you have *no idea*, take a guess! What are some possible i
 Your answer here...
 1. The a on line 4 might not be a string.
 2. The strict === vs. lazy == equal sign may not be comparing our answer correctly with the assigned value.
-
+3. Line 8: The value that the user typed in might not be captured properly.
 
 ```
 
@@ -38,8 +38,10 @@ Write down a list of questions that you have related to your specific hypothesis
 ```
 Your list of questions here....
 1. Is "a" being correctly assigned as a string? What is the proper way to to designate a string? Double-quotes or single quotes?
+
 2. What exactly is happening when === is used vs. ==?
 
+3. What "value" is being captured on Line 8? The value that the user entered or the value of the id? After identifying the id of the user input element, is "value" the correct way to get the value of what the user entered?
 
 ```
 
