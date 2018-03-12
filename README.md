@@ -119,6 +119,8 @@ Your results here...
 
 3. It's still displaying the wrong message.
 
+4. "You're correct" will display no matter what I type.
+
 ```
 
 <br/>
