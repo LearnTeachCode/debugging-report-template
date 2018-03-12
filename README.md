@@ -17,7 +17,11 @@ Even if you feel like you have *no idea*, take a guess! What are some possible i
 
 ```
 Your answer here...
+1. The a on line 4 might not be a string.
+
+
 ```
+
 
 <br/>
 
@@ -27,10 +31,14 @@ Write down a list of questions that you have related to your specific hypothesis
 
 **Example:** *"What is this textContent thing? Is the C supposed to be capitalized? Is it missing a letter?"*
 
+
 <br/>
 
 ```
 Your list of questions here....
+1. Is "a" being correctly assigned as a string? What is the proper way to to designate a string? Double-quotes or single quotes?
+
+
 ```
 
 <br/>
@@ -45,6 +53,11 @@ This step isn't needed for every hypothesis (depends what it is!), but if applic
 
 ```
 Your list of findings here...
+1. It looks like JavaScript doesn't distinguish between double-quoted strings and single-quoted strings.
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+
+
 ```
 
 <br/>
@@ -62,6 +75,8 @@ If applicable to your hypothesis, write a **list of steps** for how you changed 
 
 ```
 Your list of steps to run your experiment...
+1.a. Change to single-quoted string to see if a is recognized as the correct answer.
+
 ```
 
 <br/>
@@ -76,6 +91,8 @@ What was the result of your experiment? Did it solve the bug or not? Did it crea
 
 ```
 Your results here...
+1. Changing to single-quotes did not make a difference. The correct answer is still not trigger the correct message.
+
 ```
 
 <br/>
@@ -90,6 +107,8 @@ Did this experiment *confirm* your hypothesis? Or would you say this result is i
 
 ```
 Your conclusion here...
+1. Hypothesis is wrong since as the documentation explains, single-quoted and double-quoted strings work the same way.
+
 ```
 
 <br/>
