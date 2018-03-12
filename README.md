@@ -140,6 +140,14 @@ Your conclusion here...
 3. Hypothesis is confirmed in that the correct value is being captured since according to the documentation .value returns a string, so we know that what is being typed into the box returns a string even if a number were typed.
 
 4. Hypothesis is confirmed. The userInput == correctAnswer for whatever reason is not evaluating to true, even if I literally type in "a." However, if I set the if statement to true, it will always return the correct message. So the problem lie in the if statement.
+
+According to:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators
+
+var object1 = {'key': 'value'}, object2 = {'key': 'value'}; 
+object1 == object2 //false
+
+So comparing two variables will always result in false?????
 ```
 
 <br/>
