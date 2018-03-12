@@ -20,6 +20,7 @@ Your answer here...
 1. The a on line 4 might not be a string.
 2. The strict === vs. lazy == equal sign may not be comparing our answer correctly with the assigned value.
 3. Line 8: The value that the user typed in might not be captured properly.
+4. Line 8 is not evaluating to True.
 
 ```
 
@@ -43,6 +44,7 @@ Your list of questions here....
 
 3. What "value" is being captured on Line 8? The value that the user entered or the value of the id? After identifying the id of the user input element, is "value" the correct way to get the value of what the user entered?
 
+4. What if I set Line 26 to true?
 ```
 
 <br/>
@@ -95,6 +97,8 @@ Your list of steps to run your experiment...
 2. If "a" in the assignment is not the same as a in the form, then == should take care of the possibly different types and then compare the values, which are the same.
 
 3. Even changing Line 26 to a literal answer of "a" without a variable doesn't result in the correct message.
+
+4. Setting Line 26 to true will always result in correct answer, no matter what I type.
 ```
 
 <br/>
@@ -134,6 +138,8 @@ Your conclusion here...
 2. Hypothesis not confirmed. == did not make a difference.
 
 3. Hypothesis is confirmed in that the correct value is being captured since according to the documentation .value returns a string, so we know that what is being typed into the box returns a string even if a number were typed.
+
+4. Hypothesis is confirmed. The userInput == correctAnswer for whatever reason is not evaluating to true, even if I literally type in "a." However, if I set the if statement to true, it will always return the correct message. So the problem lie in the if statement.
 ```
 
 <br/>
