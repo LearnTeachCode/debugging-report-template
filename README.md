@@ -93,6 +93,8 @@ Your list of steps to run your experiment...
 1. Change to single-quoted string to see if a is recognized as the correct answer.
 
 2. If "a" in the assignment is not the same as a in the form, then == should take care of the possibly different types and then compare the values, which are the same.
+
+3. Even changing Line 26 to a literal answer of "a" without a variable doesn't result in the correct message.
 ```
 
 <br/>
@@ -111,6 +113,8 @@ Your results here...
 
 2. Using == does not make a difference. It's still displaying the wrong message.
 
+3. It's still displaying the wrong message.
+
 ```
 
 <br/>
@@ -128,6 +132,8 @@ Your conclusion here...
 1. Hypothesis is wrong since as the documentation explains, single-quoted and double-quoted strings work the same way.
 
 2. Hypothesis not confirmed. == did not make a difference.
+
+3. Hypothesis is confirmed in that the correct value is being captured since according to the documentation .value returns a string, so we know that what is being typed into the box returns a string even if a number were typed.
 ```
 
 <br/>
