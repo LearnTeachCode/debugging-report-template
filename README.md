@@ -65,7 +65,13 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators
 
+3. getElementById returns an Element, which would be the input box. Is there a method in Element that would return what's in the box?
 
+https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
+https://developer.mozilla.org/en-US/docs/Web/API/Element
+
+It looks like .value assigns a value to the form box rather than gets the value. Wait, it depends. You can assign a value or return a value.
+https://www.w3schools.com/jsref/prop_text_value.asp
 
 ```
 
