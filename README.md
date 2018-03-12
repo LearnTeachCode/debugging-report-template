@@ -147,7 +147,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comp
 var object1 = {'key': 'value'}, object2 = {'key': 'value'}; 
 object1 == object2 //false
 
-So comparing two variables will always result in false?????
+So comparing two variables will always result in false????? Because String objects are being compared.
 ```
 
 <br/>
