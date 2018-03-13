@@ -14,7 +14,8 @@ Even if you feel like you have *no idea*, take a guess! What are some possible i
 <br/>
 
 ```
-Your answer here...
+1. Since the computer seems to be skipping over lines 24-28, it seems as though there is something that is inhibiting it from reading that line. Then, place "guessesRemaining --" after the "you win!" message?
+2. It could be that there is a discrepancy between === and ==? 
 ```
 
 <br/>
@@ -28,7 +29,8 @@ Write down a list of questions that you have related to your specific hypothesis
 <br/>
 
 ```
-Your list of questions here....
+1. Why is "guessesRemaining --" placed immediately after "you win!" message, or right before the "else if" of the "incorrect answer" message? 
+2. What is the difference between === and ==? 
 ```
 
 <br/>
@@ -42,7 +44,8 @@ This step isn't needed for every hypothesis (depends what it is!), but if applic
 <br/>
 
 ```
-Your list of findings here...
+1. The computer has to check, first, if there are more than zero guesses remaining AFTER the computer subtracts one from the number of options available. 
+2. The == goes through a longer series of conversions to check if the values truly equal each other. Ex: false == '0' will produce true. A function with === will produce the exact result of what is given in previous lines or what is directly presented in front of it. 
 ```
 
 <br/>
@@ -59,7 +62,8 @@ If applicable to your hypothesis, write a **list of steps** for how you changed 
 <br/>
 
 ```
-Your list of steps to run your experiment...
+1. Because I thought that the order of operations was incorrect, I rearranged the "guessesRemaining --" to come after the "incorrect answer!" message. I will place the "guessesRemaining --" after the else if ( guessesRemaing > 0 ) line. 
+2. Because I thought that the issue was in the == vs ===, I changed the === to == in line 26. 
 ```
 
 <br/>
@@ -73,7 +77,8 @@ What was the result of your experiment? Did it solve the bug or not? Did it crea
 <br/>
 
 ```
-Your results here...
+1. I saw the same results, and the bug still remained. However, this time, a guess was not subtracted from my guessesRemaining. 
+2. The same issue still remained, and the bug was not fixed. 
 ```
 
 <br/>
@@ -87,7 +92,8 @@ Did this experiment *confirm* your hypothesis? Or would you say this result is i
 <br/>
 
 ```
-Your conclusion here...
+1. This experiment confirmed that there is an order of operations and that the computer needs to subtract one before the computer can check if the number of guessesRemaining is greater than 0. 
+2. I learned that == goes through a longer set of conversions to see if the values equal each other, and === checks if values equal each other if the current values presented before the computer equal each other. 
 ```
 
 <br/>
