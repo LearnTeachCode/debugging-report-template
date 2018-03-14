@@ -14,7 +14,9 @@ Even if you feel like you have *no idea*, take a guess! What are some possible i
 <br/>
 
 ```
-Your answer here...
+The double equal sign == should be used to comprare userInput and correctAnswer
+Line 8: .value is wrong here.
+
 ```
 
 <br/>
@@ -28,7 +30,9 @@ Write down a list of questions that you have related to your specific hypothesis
 <br/>
 
 ```
-Your list of questions here....
+Is anything input within the box of userInput a string ?
+Shoud I change '===' to '=='?
+Is the .value supposed to be added in line 8 ?
 ```
 
 <br/>
@@ -42,7 +46,7 @@ This step isn't needed for every hypothesis (depends what it is!), but if applic
 <br/>
 
 ```
-Your list of findings here...
+I found the difference between "===" and "==" from Stack Overflow( https://stackoverflow.com/questions/523643/difference-between-and-in-javascript) that strict equality the objects being compared must have the same type
 ```
 
 <br/>
@@ -58,8 +62,9 @@ If applicable to your hypothesis, write a **list of steps** for how you changed 
 
 <br/>
 
-```
-Your list of steps to run your experiment...
+```I thought that anything input in the box may not be stored as a string. Thus I replaced the === with == and refreshed the page to check. 
+I guessed that value could't be added in line 8 and also a new variable should be declared and assigned a new method of .value. 
+
 ```
 
 <br/>
@@ -73,7 +78,8 @@ What was the result of your experiment? Did it solve the bug or not? Did it crea
 <br/>
 
 ```
-Your results here...
+(1) After I entered 'a' into the box, I saw ' wrong and guess again' and the bug is still there. 
+(2) The bug was fixed and the outcome was 'You win. Refresh this page and play again!!'
 ```
 
 <br/>
@@ -87,7 +93,7 @@ Did this experiment *confirm* your hypothesis? Or would you say this result is i
 <br/>
 
 ```
-Your conclusion here...
+(1)strict equality the objects being compared must have the same type.
 ```
 
 <br/>
