@@ -1,4 +1,3 @@
-##rainy day
 # Debugging Report Template
 
 After forking this project on GitHub, edit this file to replace where it says `Your answer here...` under each section below with your actual answers to each prompt while you strategically hunt for bugs!
@@ -15,7 +14,8 @@ Even if you feel like you have *no idea*, take a guess! What are some possible i
 <br/>
 
 ```
-Your answer here...
+the value of answer is not defined properly.
+the value of the notice is defined "Wrong" when it's supposed to be "Correct."
 ```
 
 <br/>
