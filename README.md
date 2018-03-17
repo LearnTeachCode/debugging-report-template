@@ -21,6 +21,7 @@ Your answer here...
 2. The strict === vs. lazy == equal sign may not be comparing our answer correctly with the assigned value.
 3. Line 8: The value that the user typed in might not be captured properly.
 4. Line 8 is not evaluating to True.
+5. Assignment of value from user-input is being done BEFORE user input occurs.
 
 ```
 
@@ -45,6 +46,8 @@ Your list of questions here....
 3. What "value" is being captured on Line 8? The value that the user entered or the value of the id? After identifying the id of the user input element, is "value" the correct way to get the value of what the user entered?
 
 4. What if I set Line 26 to true?
+
+5. What if I move userInput assignment into the function compareAndDisplayOutcome?
 ```
 
 <br/>
@@ -99,6 +102,8 @@ Your list of steps to run your experiment...
 3. Even changing Line 26 to a literal answer of "a" without a variable doesn't result in the correct message.
 
 4. Setting Line 26 to true will always result in correct answer, no matter what I type.
+
+5. 
 ```
 
 <br/>
@@ -120,6 +125,8 @@ Your results here...
 3. It's still displaying the wrong message.
 
 4. "You're correct" will display no matter what I type.
+
+5. Inputting the correct answer "a" results in the correct answer.
 
 ```
 
@@ -150,6 +157,8 @@ var object1 = {'key': 'value'}, object2 = {'key': 'value'};
 object1 == object2 //false
 
 So comparing two variables will always result in false????? Because String objects are being compared.
+
+5. When something happens is important. Also, the initial assignment was global, whereas it should have been local to the function. Assigning a value to userInput before user input occurs means that a null value was being assigned. Anything compared to null would result in a false condition. Hence, the game never results in a correct answer.
 
 ```
 
