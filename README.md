@@ -1,3 +1,5 @@
+Barry
+
 # Debugging Report Template
 
 After forking this project on GitHub, edit this file to replace where it says `Your answer here...` under each section below with your actual answers to each prompt while you strategically hunt for bugs!
@@ -15,7 +17,14 @@ Even if you feel like you have *no idea*, take a guess! What are some possible i
 
 ```
 Your answer here...
+1. The a on line 4 might not be a string.
+2. The strict === vs. lazy == equal sign may not be comparing our answer correctly with the assigned value.
+3. Line 8: The value that the user typed in might not be captured properly.
+4. Line 8 is not evaluating to True.
+5. Assignment of value from user-input is being done BEFORE user input occurs.
+
 ```
+
 
 <br/>
 
@@ -25,10 +34,20 @@ Write down a list of questions that you have related to your specific hypothesis
 
 **Example:** *"What is this textContent thing? Is the C supposed to be capitalized? Is it missing a letter?"*
 
+
 <br/>
 
 ```
 Your list of questions here....
+1. Is "a" being correctly assigned as a string? What is the proper way to to designate a string? Double-quotes or single quotes?
+
+2. What exactly is happening when === is used vs. ==?
+
+3. What "value" is being captured on Line 8? The value that the user entered or the value of the id? After identifying the id of the user input element, is "value" the correct way to get the value of what the user entered?
+
+4. What if I set Line 26 to true?
+
+5. What if I move userInput assignment into the function compareAndDisplayOutcome?
 ```
 
 <br/>
@@ -43,6 +62,22 @@ This step isn't needed for every hypothesis (depends what it is!), but if applic
 
 ```
 Your list of findings here...
+1. It looks like JavaScript doesn't distinguish between double-quoted strings and single-quoted strings.
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+
+2. === is true only if the operands are of the same type and value. == converts them to the same type and then makes the comparison of values.
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators
+
+3. getElementById returns an Element, which would be the input box. Is there a method in Element that would return what's in the box?
+
+https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
+https://developer.mozilla.org/en-US/docs/Web/API/Element
+
+It looks like .value assigns a value to the form box rather than gets the value. Wait, it depends. You can assign a value or return a value.
+https://www.w3schools.com/jsref/prop_text_value.asp
+
 ```
 
 <br/>
@@ -60,6 +95,15 @@ If applicable to your hypothesis, write a **list of steps** for how you changed 
 
 ```
 Your list of steps to run your experiment...
+1. Change to single-quoted string to see if a is recognized as the correct answer.
+
+2. If "a" in the assignment is not the same as a in the form, then == should take care of the possibly different types and then compare the values, which are the same.
+
+3. Even changing Line 26 to a literal answer of "a" without a variable doesn't result in the correct message.
+
+4. Setting Line 26 to true will always result in correct answer, no matter what I type.
+
+5. 
 ```
 
 <br/>
@@ -74,6 +118,16 @@ What was the result of your experiment? Did it solve the bug or not? Did it crea
 
 ```
 Your results here...
+1. Changing to single-quotes did not make a difference. The correct answer is still not trigger the correct message.
+
+2. Using == does not make a difference. It's still displaying the wrong message.
+
+3. It's still displaying the wrong message.
+
+4. "You're correct" will display no matter what I type.
+
+5. Inputting the correct answer "a" results in the correct answer.
+
 ```
 
 <br/>
@@ -88,6 +142,24 @@ Did this experiment *confirm* your hypothesis? Or would you say this result is i
 
 ```
 Your conclusion here...
+1. Hypothesis is wrong since as the documentation explains, single-quoted and double-quoted strings work the same way.
+
+2. Hypothesis not confirmed. == did not make a difference.
+
+3. Hypothesis is confirmed in that the correct value is being captured since according to the documentation .value returns a string, so we know that what is being typed into the box returns a string even if a number were typed.
+
+4. Hypothesis is confirmed. The userInput == correctAnswer for whatever reason is not evaluating to true, even if I literally type in "a." However, if I set the if statement to true, it will always return the correct message. So the problem lie in the if statement.
+
+According to:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators
+
+var object1 = {'key': 'value'}, object2 = {'key': 'value'}; 
+object1 == object2 //false
+
+So comparing two variables will always result in false????? Because String objects are being compared.
+
+5. When something happens is important. Also, the initial assignment was global, whereas it should have been local to the function. Assigning a value to userInput before user input occurs means that a null value was being assigned. Anything compared to null would result in a false condition. Hence, the game never results in a correct answer.
+
 ```
 
 <br/>
