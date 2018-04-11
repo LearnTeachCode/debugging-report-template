@@ -14,7 +14,7 @@ Even if you feel like you have *no idea*, take a guess! What are some possible i
 <br/>
 
 ```
-Your answer here...
+I think dogs should vote
 ```
 
 <br/>
