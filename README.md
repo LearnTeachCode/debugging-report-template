@@ -14,7 +14,8 @@ Even if you feel like you have *no idea*, take a guess! What are some possible i
 <br/>
 
 ```
-Your answer here...
+the value of answer is not defined properly.
+the value of the notice is defined "Wrong" when it's supposed to be "Correct."
 ```
 
 <br/>
@@ -28,7 +29,7 @@ Write down a list of questions that you have related to your specific hypothesis
 <br/>
 
 ```
-Your list of questions here....
+Is else if statement put correctly?
 ```
 
 <br/>
